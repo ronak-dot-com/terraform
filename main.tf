@@ -74,3 +74,6 @@ module "alb" {
   alb_sg_id            = module.vpc.alb_sg_id
   app_sg_id            = module.vpc.app_sg_id
 }
+
+
+
