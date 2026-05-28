@@ -22,6 +22,7 @@ output "ec2_private_key_path" {
 
 output "ssh_command" {
   description = "SSH command to connect to the EC2 instance"
+  sensitive   = true
   value       = "ssh -i ${module.ec2.private_key_path} ec2-user@${module.ec2.public_ip}"
 }
 
